@@ -1,0 +1,7 @@
+﻿@using Glass.Mapper.Sc.Web.Mvc
+@using SUGNL.CodeFirst.Webroot.Extensions
+@model SUGNL.CodeFirst.Webroot.Controllers.TitleViewModel
+
+@Html.Raw(string.Format("<{0}>", Model.Parameters.HeadingSize.NullIfEmpty() ?? "H1"))
+@Html.Glass().Editable(Model.Datasource, m => m.TitleText)
+@Html.Raw(string.Format("</{0}>", Model.Parameters.HeadingSize.NullIfEmpty() ?? "H1"))
