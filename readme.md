@@ -6,6 +6,7 @@ To get it to work on your machine:
 * Add a File System publishing target to the Visual Studio solution which points to the clean Sc webroot
 * Copy the Sitecore dlls to /local_packages/Sitecore
 * Publish to the clean Sc instance
+* Install the package: Layout and Demo page-1.0.0.zip
 
 On application start it will:
 * Generate Templates under /sitecore/templates/GlassTemplates
